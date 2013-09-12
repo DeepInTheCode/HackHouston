@@ -12,8 +12,7 @@ namespace HackHouston.Controllers
         public ActionResult Index()
         {
             var apiExplorer = GlobalConfiguration.Configuration.Services.GetApiExplorer();
-            return View(apiExplorer);
-            //return View();
+            return View(apiExplorer);            
         }
     }
 }

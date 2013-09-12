@@ -30,13 +30,13 @@
               <h4>Responsible Department</h4>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox" value='All' id="all_departments" checked="checked"/> All
+                  <input type="checkbox" value="All" id="all_departments" /> All
                 </label>
               </div>
             </div>
         
             <div id="embed">
-              <h4><button class="link btn btn-primary">Embed fees on your website.</button></h4>
+              <h4><input type="button" value="Embed fees on your website." class="link btn btn-primary" /></h4>
           
               <div class="des">
                 <p>Check the embed boxes on the fees, and copy the code below.</p>
@@ -66,27 +66,29 @@
                   </div>
                 </div>
                 <span style="display:none;">{{TagString}}</span>
-                <span class="id" style="display:none;">ID</span>
+                <span class="id" style="display:none;">{{ID}}</span>
               </div>
             </div>
           </script>
           <script id="department_template" type="text/html">
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="{{department}}" checked="checked"/> {{department}}
+                <input type="checkbox" value="{{department}}" /> {{department}}
               </label>
             </div>
           </script>
           </div>
           <script src="assets/js/libs/jquery/jquery.min.js" type="text/javascript"></script>
+          <%--<script src="Scripts/jquery-2.0.3.min.js"></script>--%>  
           <script src="assets/js/libs/jquery/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+          <%--<script src="Scripts/jquery-ui-1.10.3.min.js"></script>--%>
           <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>
           <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>
           <script src="vendors/mustache.js" type="text/javascript"></script>
-          <script type="text/javascript">
-              var master_fees = $.getJSON('/api/Json?tableName=<%= System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(null).AppSettings.Settings["tableName"] %>');
+          <script type ="text/javascript">
+              var apiUrl = '<%= apiUrl %>';
           </script>
-          <script src="config.js" type="text/javascript"></script>
+          <script src="Scripts/config.js" type="text/javascript"></script>
           <script src="assets/js/libs/json2.js" type="text/javascript"></script>
           <script src="assets/js/libs/jquery/jquery.jstorage.js" type="text/javascript"></script>
           <script src="assets/js/Handler.js" type="text/javascript"></script>
@@ -94,6 +96,9 @@
           <script src="assets/js/storage.js" type="text/javascript"></script>
           <script src="assets/js/filter.js" type="text/javascript"></script>
           <script src="assets/js/embed.js" type="text/javascript"></script>
+          <script type="text/javascript">
+              var all_deps = ['<%= strResponsibleDepartment %>'];
+          </script>  
           <script src="assets/js/stream.js" type="text/javascript"></script>
           <script src="assets/js/infinitescroll.js" type="text/javascript"></script>
       </form>

@@ -38,21 +38,5 @@
             </li>
         }
         </ul>
-    </section>
-    @*<ul id="Fees"></ul>*@
+    </section>    
 </div>
-
-@*@section scripts{
-<script type="text/javascript">
-$(function()
-{
-    $.getJSON('/api/Json?tableName=feestable', function (feesJsonPayload)
-        {
-            $(feesJsonPayload).each(function(i, item)
-            {
-                $('#Fees').append('<li>' + item.Name + '</li>');
-            });
-        });
-});
-</script>
-}*@
