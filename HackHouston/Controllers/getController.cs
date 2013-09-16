@@ -21,21 +21,27 @@ namespace HackHouston.Controllers
         }
 
         [HttpGet]
-        public HttpResponseMessage all()
+        public HttpResponseMessage all(string hash, string callback, string id)
         {
-            return jsonRepository.GetAllJsons(null, null);
+            return jsonRepository.GetJsons(hash, callback, id);
         }
 
         [HttpGet]
-        public HttpResponseMessage all(string hash, string callback)
+        public HttpResponseMessage all()
         {
-            return jsonRepository.GetAllJsons(hash, callback);
+            return jsonRepository.GetJsons(null, null, null);
         }
 
         [HttpGet]
         public HttpResponseMessage all(string callback)
         {
-            return jsonRepository.GetAllJsons(null, callback);
+            return jsonRepository.GetJsons(null, callback, null);
         }
+        
+        //[HttpGet]
+        //public HttpResponseMessage all(string hash, string callback)
+        //{
+        //    return jsonRepository.GetJsons(hash, callback, null);
+        //}
     }
 }

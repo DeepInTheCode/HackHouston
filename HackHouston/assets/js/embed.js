@@ -53,12 +53,12 @@
   }
   
   function calculateURL() {
-    var url = window.city_config['api url'] + '/get/id?';
+      var url = window.city_config['embed url'] + '/FeesByIds.aspx?';
     for (var x = 0, l = ids.length; x < l; x++) {
-      url += ((x === 0) ? 'id[]=' : '&id[]=') + ids[x];
+      url += ((x === 0) ? 'id=' : ',') + ids[x];
     }
     
-    $('#embed textarea').text(url);
+    $('#embed textarea').text("<iframe src=\"" + url + "\" />");
   }
   
 })(this);

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Fees.aspx.cs" Inherits="Fees" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="FeesById.aspx.cs" Inherits="FeesById" %>
 
 <!DOCTYPE html>
 
@@ -15,8 +15,8 @@
   <body runat="server">
     <form id="form1" runat="server">
         <div class="container">
-          <h1 class="title">City Fee Schedule</h1>
-          <div class="sidebar col-span-3">
+<%--          <h1 class="title">City Fee Schedule</h1>--%>
+ <%--         <div class="sidebar col-span-3">
             <div class="row">
               <h4 class="col-span-6"> Fees (<span id="total_fees"></span>)</h4>
             </div>
@@ -29,8 +29,8 @@
             <div class="criteria" id="department_criteria">
               <h4>Responsible Department</h4>
               <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="All" id="all_departments" checked="checked" /> All
+                <label>7
+                  <input type="checkbox" value="All" id="all_departments" /> All
                 </label>
               </div>
             </div>
@@ -45,8 +45,8 @@
             </div>
           </div>
           <div class="col-span-9" id="fee-categories">
-          </div>
-          <div class="fees content col-span-9" id="fees">
+          </div>--%>
+          <div class="fees content col-span-6" id="fees"><%--<div class="fees content col-span-9" id="fees">--%>
           </div>
           <script id="template" type="text/html">
             <div class="col-span-12 fee">
@@ -70,13 +70,13 @@
               </div>
             </div>
           </script>
-          <script id="department_template" type="text/html">
+<%--          <script id="department_template" type="text/html">
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="{{department}}" checked="checked" /> {{department}}
+                <input type="checkbox" value="{{department}}" /> {{department}}
               </label>
             </div>
-          </script>
+          </script>--%>
           </div>
           <%--<script src="assets/js/libs/jquery/jquery.min.js" type="text/javascript"></script>--%>
           <script src="Scripts/jquery-2.0.3.min.js"></script>  
@@ -87,19 +87,19 @@
           <script src="vendors/mustache.js" type="text/javascript"></script>
           <script type ="text/javascript">
               var apiUrl = '<%= apiUrl %>';
-              var embedUrl = '<%= embedUrl %>';
+              var idArray = '<%= idArray %>';
           </script>
           <script src="Scripts/config.js" type="text/javascript"></script>
           <script src="assets/js/libs/json2.js" type="text/javascript"></script>
           <script src="assets/js/libs/jquery/jquery.jstorage.js" type="text/javascript"></script>
           <script src="assets/js/Handler.js" type="text/javascript"></script>
           <script src="assets/js/libs/md5.js" type="text/javascript"></script>
-          <script src="assets/js/storage.js" type="text/javascript"></script>
+          <script src="assets/js/storageIds.js" type="text/javascript"></script>
           <script src="assets/js/filter.js" type="text/javascript"></script>
           <script src="assets/js/embed.js" type="text/javascript"></script>
-          <script type="text/javascript">
+<%--          <script type="text/javascript">
               var all_deps = ['<%= strResponsibleDepartment %>'];
-          </script>  
+          </script>  --%>
           <script src="assets/js/stream.js" type="text/javascript"></script>
           <script src="assets/js/infinitescroll.js" type="text/javascript"></script>
       </form>

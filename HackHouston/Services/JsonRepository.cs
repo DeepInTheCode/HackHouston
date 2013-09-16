@@ -13,7 +13,7 @@ namespace HackHouston.Services
 {
     public class JsonRepository
     {
-        public HttpResponseMessage GetAllJsons(string hash, string callback)
+        public HttpResponseMessage GetJsons(string hash, string callback, string id)
         {
             SqlDataReader rdr = null;
             SqlConnection conn = null;
@@ -22,12 +22,29 @@ namespace HackHouston.Services
             string connectionString = string.Empty;
             string json = string.Empty;
             string tableName = WebConfigurationManager.AppSettings["tableName"];
+            bool bId = !(id == "all");
             
             try
             {       
                 connectionString = ConfigurationManager.ConnectionStrings["HackHou2008ConnectionString"].ConnectionString;
                 conn = new SqlConnection(connectionString);
-                command = new SqlCommand("SELECT * FROM " + tableName,conn);
+                string strSQL = "SELECT * FROM " + tableName;
+                if (bId)
+                {
+                    string idColumn = WebConfigurationManager.AppSettings["idColumn"];
+                    string idList = "";
+                    string[] idArray = id.Split(',');
+                    foreach (string idNum in idArray)
+                    {
+                        if (!(idNum == idArray[0]))
+                        {
+                            idList += ", ";
+                        }
+                        idList += "'" + idNum + "'";
+                    }
+                    strSQL = strSQL + " WHERE " + idColumn + " IN (" + idList + ")";
+                }
+                command = new SqlCommand(strSQL,conn);
                 command.CommandTimeout = 3600;
             
             

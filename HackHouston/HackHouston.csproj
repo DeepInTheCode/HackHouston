@@ -147,6 +147,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\getController.cs" />
+    <Compile Include="FeesById.aspx.cs">
+      <DependentUpon>FeesById.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Fees.aspx.cs">
       <DependentUpon>Fees.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,6 +193,7 @@
     <Content Include="assets\css\stream.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\glyphiconshalflings-regular.svg" />
+    <Content Include="assets\js\storageIds.js" />
     <Content Include="assets\js\storage.js" />
     <Content Include="assets\js\embed.js" />
     <Content Include="assets\js\filter.js" />
@@ -203,6 +208,7 @@
     <Content Include="assets\js\libs\md5.js" />
     <Content Include="assets\js\libs\respond.js" />
     <Content Include="assets\js\stream.js" />
+    <Content Include="FeesById.aspx" />
     <Content Include="Scripts\config.js" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />

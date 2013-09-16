@@ -7,11 +7,11 @@ using System.Web;
 using System.Web.Configuration;
 
 
-public partial class Fees : System.Web.UI.Page
+public partial class FeesById : System.Web.UI.Page
 {    
-    protected string strResponsibleDepartment;
+    //protected string strResponsibleDepartment;
+    protected string idArray;
     protected string apiUrl;
-    protected string embedUrl;
     protected string amountColumn;
     protected string nameColumn;
     protected string descriptionColumn;
@@ -20,6 +20,7 @@ public partial class Fees : System.Web.UI.Page
     protected string tagColumn;
     protected string idColumn;
 
+
     protected void Page_Load(object sender, EventArgs e)
     {
         string tableName = getAppSettingsValue("tableName");
@@ -27,33 +28,32 @@ public partial class Fees : System.Web.UI.Page
         string authority = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority);
         string relativeUrl = "/api";
         apiUrl = authority + relativeUrl;
-        embedUrl = authority;
         
-        List<string> ResponsibleDepartment = new List<string>();
+        //List<string> ResponsibleDepartment = new List<string>();
         
         string connectionString = ConfigurationManager.ConnectionStrings["HackHou2008ConnectionString"].ConnectionString;
         SqlConnection conn = new SqlConnection(connectionString);
         try
         {
-            SqlCommand command = new SqlCommand("SELECT DISTINCT [" + searchColumn + "] FROM [" + tableName + "] ORDER BY [" + searchColumn + "]", conn);
-            command.CommandTimeout = 3600;
-                        
-            // ... SQL connection and command set up
-            conn.Open();
+            //SqlCommand command = new SqlCommand("SELECT DISTINCT [" + searchColumn + "] FROM [" + tableName + "] ORDER BY [" + searchColumn + "]", conn);
+            //command.CommandTimeout = 3600;
 
-            SqlDataReader rdr = command.ExecuteReader();
+            //// ... SQL connection and command set up
+            //conn.Open();
 
-            while (rdr.Read())
-            {
-                int pos = ResponsibleDepartment.IndexOf(rdr[searchColumn].ToString());
-                if (pos == -1)
-                {
-                    ResponsibleDepartment.Add(rdr[searchColumn].ToString());
-                }
-            }      
-            rdr.Close();
-            ResponsibleDepartment.Sort();
-            strResponsibleDepartment = string.Join("','", ResponsibleDepartment.ToArray<String>());
+            //SqlDataReader rdr = command.ExecuteReader();
+
+            //while (rdr.Read())
+            //{
+            //    int pos = ResponsibleDepartment.IndexOf(rdr[searchColumn].ToString());
+            //    if (pos == -1)
+            //    {
+            //        ResponsibleDepartment.Add(rdr[searchColumn].ToString());
+            //    }
+            //}
+            //rdr.Close();
+            //ResponsibleDepartment.Sort();
+            //strResponsibleDepartment = string.Join("','", ResponsibleDepartment.ToArray<String>());
 
             amountColumn = getAppSettingsValue("amountColumn");
             nameColumn = getAppSettingsValue("nameColumn");
@@ -62,6 +62,15 @@ public partial class Fees : System.Web.UI.Page
             statAuthColumn = getAppSettingsValue("statAuthColumn");
             tagColumn = getAppSettingsValue("tagColumn");
             idColumn = getAppSettingsValue("idColumn");
+
+            if (Request.QueryString["id"] == null)
+            {
+                idArray = null;
+            }
+            else
+            {
+                idArray = Request.QueryString["id"].ToString();
+            }
 
             //End of method
         }
