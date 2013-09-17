@@ -38,3 +38,4 @@ C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\obj\Debug\HackHouston.P
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\obj\Debug\HackHouston.csproj.GenerateResource.Cache
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\obj\Debug\HackHouston.dll
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\obj\Debug\HackHouston.pdb
+C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\obj\Debug\HackHouston.csprojResolveAssemblyReference.cache

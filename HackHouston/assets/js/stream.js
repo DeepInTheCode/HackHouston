@@ -9,20 +9,21 @@ jQuery(document).ready(function($) {
     }));
   });
 
-  window.fee_filter = create_filter(master_fees);
-
+  
+  
   $('#department_criteria :checkbox').prop('checked', true);
-
+  
   function handle() {
     $('#all_departments').on('click', function(e) {
       $('#department_criteria :checkbox:gt(0)').prop('checked', $(this).is(':checked'));
       fee_filter.filter();
     });
   }
-
+  
   handle();
   handler.addHandler(handle);
-
+  
+  window.fee_filter = create_filter(master_fees);
 });
 
 var create_filter = function(data) {

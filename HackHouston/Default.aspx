@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Fees.aspx.cs" Inherits="Fees" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Default" %>
 
 <!DOCTYPE html>
 
@@ -15,10 +15,10 @@
   <body runat="server">
     <form id="form1" runat="server">
         <div class="container">
-          <h1 class="title">City Fee Schedule</h1>
+          <h1 class="title">City of Houston Fee Schedule</h1>
           <div class="sidebar col-span-3">
             <div class="row">
-              <h4 class="col-span-6"> Fees (<span id="total_fees"></span>)</h4>
+              <h4 class="col-span-6"> Fees (<span id="total_fees"><%= feeCount %></span>)</h4>
             </div>
             <div>
               <input type="text" id="searchbox" placeholder="Search..." />
@@ -30,7 +30,7 @@
               <h4>Responsible Department</h4>
               <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="All" id="all_departments" checked="checked" /> All
+                  <input type="checkbox" value="All" id="all_departments" /> All
                 </label>
               </div>
             </div>
@@ -73,7 +73,7 @@
           <script id="department_template" type="text/html">
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="{{department}}" checked="checked" /> {{department}}
+                <input type="checkbox" value="{{department}}" /> {{department}}
               </label>
             </div>
           </script>

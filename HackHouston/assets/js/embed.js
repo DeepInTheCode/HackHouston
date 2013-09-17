@@ -53,7 +53,7 @@
   }
   
   function calculateURL() {
-      var url = window.city_config['embed url'] + '/FeesByIds.aspx?';
+      var url = window.city_config['embed url'] + '/FeesById.aspx?';
     for (var x = 0, l = ids.length; x < l; x++) {
       url += ((x === 0) ? 'id=' : ',') + ids[x];
     }
