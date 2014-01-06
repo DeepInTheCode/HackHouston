@@ -44,9 +44,9 @@
           <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>
           <script src="vendors/mustache.js" type="text/javascript"></script>
           <script type ="text/javascript">
-              var apiUrl = '<%= apiUrl %>';
-              var embedUrl = '';
-              var idArray = '<%= idArray %>';
+              var apiUrl = "<%= apiUrl %>";
+              var embedUrl = "";
+              var idArray = "<%= idArray %>";
           </script>
           <script src="Scripts/config.js" type="text/javascript"></script>
           <script src="assets/js/libs/json2.js" type="text/javascript"></script>

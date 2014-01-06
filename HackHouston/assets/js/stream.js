@@ -23,16 +23,16 @@ jQuery(document).ready(function($) {
   handle();
   handler.addHandler(handle);
   
-  window.fee_filter = create_filter(master_fees);
+  //window.fee_filter = create_filter(master_fees);
 });
 
 var create_filter = function(data) {
-  data.sort(function(a, b) {
-    var one = parseFloat(b['AMOUNT'].replace(/[^0-9.]/, ''), 10) || 0;
-    var two = parseFloat(a['AMOUNT'].replace(/[^0-9.]/, ''), 10) || 0;
+  //data.sort(function(a, b) {
+  //  var one = parseFloat(b['AMOUNT'].replace(/[^0-9.]/, ''), 10) || 0;
+  //  var two = parseFloat(a['AMOUNT'].replace(/[^0-9.]/, ''), 10) || 0;
     
-    return one - two;
-  });
+  //  return one - two;
+  //});
   
   $.each(data, function(i, m) {
     m.id = i + 1;

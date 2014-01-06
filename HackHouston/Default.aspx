@@ -7,16 +7,16 @@
     <title>City of Houston Fee Schedule</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
     <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
-    <%--<link href="assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css" />--%>
+    <link href="assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="assets/css/stream.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="assets/css/custom.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="assets/js/libs/respond.js" type="text/javascript"></script>
   </head>
-  <body runat="server">
+  <body runat="server" onkeypress="var e = (event ? event : window.event); return (e.keyCode ? e.keyCode : e.charCode ? e.charCode : e.which) != 13;">
     <form id="form1" runat="server">
         <div class="container">
-          <h1 class="title">City of Houston Fee Schedule</h1>
-          <div class="sidebar col-span-3">
+            <h1 class="title">City of Houston Fee Schedule</h1>
+            <div class="sidebar col-span-3">
             <div class="row">
               <h4 class="col-span-6"> Fees (<span id="total_fees"><%= feeCount %></span>)</h4>
             </div>
@@ -78,16 +78,16 @@
             </div>
           </script>
           </div>
-          <%--<script src="assets/js/libs/jquery/jquery.min.js" type="text/javascript"></script>--%>
+          <script src="assets/js/libs/jquery/jquery.min.js" type="text/javascript"></script>
           <script src="Scripts/jquery-2.0.3.min.js"></script>  
-          <%--<script src="assets/js/libs/jquery/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>--%>
-          <%--<script src="Scripts/jquery-ui-1.10.3.min.js"></script>--%>
+          <script src="assets/js/libs/jquery/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+          <script src="Scripts/jquery-ui-1.10.3.min.js"></script>
           <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>
           <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>
           <script src="vendors/mustache.js" type="text/javascript"></script>
           <script type ="text/javascript">
-              var apiUrl = '<%= apiUrl %>';
-              var embedUrl = '<%= embedUrl %>';
+              var apiUrl = "<%= apiUrl %>";
+              var embedUrl = "<%= embedUrl %>";
           </script>
           <script src="Scripts/config.js" type="text/javascript"></script>
           <script src="assets/js/libs/json2.js" type="text/javascript"></script>
@@ -98,7 +98,7 @@
           <script src="assets/js/filter.js" type="text/javascript"></script>
           <script src="assets/js/embed.js" type="text/javascript"></script>
           <script type="text/javascript">
-              var all_deps = ['<%= strResponsibleDepartment %>'];
+              var all_deps = ["<%= strResponsibleDepartment %>"];
           </script>  
           <script src="assets/js/stream.js" type="text/javascript"></script>
           <script src="assets/js/infinitescroll.js" type="text/javascript"></script>

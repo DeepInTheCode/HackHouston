@@ -48,7 +48,8 @@ namespace HackHouston.Services
                 {
                     connectionString = ConfigurationManager.ConnectionStrings["DbConnectionString"].ConnectionString;
                     conn = new SqlConnection(connectionString);
-                    string strSQL = "SELECT * FROM " + tableName;
+                    string nameColumn = WebConfigurationManager.AppSettings["nameColumn"];
+                    string strSQL = "SELECT * FROM [" + tableName + "]";
                     if (bId)
                     {
                         string idColumn = WebConfigurationManager.AppSettings["idColumn"];
@@ -62,8 +63,9 @@ namespace HackHouston.Services
                             }
                             idList += "'" + idNum + "'";
                         }
-                        strSQL = strSQL + " WHERE " + idColumn + " IN (" + idList + ")";
+                        strSQL = strSQL + " WHERE [" + idColumn + "] IN (" + idList + ")";
                     }
+                    strSQL = strSQL + " ORDER BY [" + nameColumn + "]";
                     command = new SqlCommand(strSQL, conn);
                     command.CommandTimeout = 3600;
 

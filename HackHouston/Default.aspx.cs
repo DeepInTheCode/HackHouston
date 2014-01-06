@@ -38,10 +38,11 @@ public partial class Default : System.Web.UI.Page
         {
             if (Application["ResponsibleDepartment"] == null)
             {                
-                string searchColumn = getAppSettingsValue("searchColumn");
+                //string searchColumn = getAppSettingsValue("searchColumn");
+                deptColumn = getAppSettingsValue("deptColumn");
                 List<string> ResponsibleDepartment = new List<string>();
 
-                command = new SqlCommand("SELECT DISTINCT [" + searchColumn + "] FROM [" + tableName + "] ORDER BY [" + searchColumn + "]", conn);
+                command = new SqlCommand("SELECT DISTINCT [" + deptColumn + "] FROM [" + tableName + "] ORDER BY [" + deptColumn + "]", conn);
                 command.CommandTimeout = 3600;
 
                 // ... SQL connection and command set up
@@ -51,16 +52,21 @@ public partial class Default : System.Web.UI.Page
 
                 while (rdr.Read())
                 {
-                    int pos = ResponsibleDepartment.IndexOf(rdr[searchColumn].ToString());
+                    int pos = ResponsibleDepartment.IndexOf(rdr[deptColumn].ToString());
                     if (pos == -1)
                     {
-                        ResponsibleDepartment.Add(rdr[searchColumn].ToString());
+                        string strRespDept = rdr[deptColumn].ToString();
+                        //if (strRespDept.Contains(@"'"))
+                        //{
+                        //    strRespDept.Replace(@"'", @"''");
+                        //}                        
+                        ResponsibleDepartment.Add(strRespDept);
                     }
                 }
                 rdr.Close();
 
                 ResponsibleDepartment.Sort();
-                Application["ResponsibleDepartment"] = string.Join("','", ResponsibleDepartment.ToArray<String>());                
+                Application["ResponsibleDepartment"] = string.Join("\",\"", ResponsibleDepartment.ToArray<String>());                
             }
             strResponsibleDepartment = Application["ResponsibleDepartment"].ToString();
 
@@ -79,7 +85,7 @@ public partial class Default : System.Web.UI.Page
             amountColumn = getAppSettingsValue("amountColumn");
             nameColumn = getAppSettingsValue("nameColumn");
             descriptionColumn = getAppSettingsValue("descriptionColumn");
-            deptColumn = getAppSettingsValue("deptColumn");
+            //deptColumn = getAppSettingsValue("deptColumn");
             statAuthColumn = getAppSettingsValue("statAuthColumn");
             tagColumn = getAppSettingsValue("tagColumn");
             idColumn = getAppSettingsValue("idColumn");
