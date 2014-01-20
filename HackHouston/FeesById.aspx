@@ -39,7 +39,7 @@
             </div>
           </script>
           </div>          
-          <script src="Scripts/jquery-2.0.3.min.js"></script>  
+          <script src="Scripts/jquery-1.10.2.min.js"></script> 
           <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>
           <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>
           <script src="vendors/mustache.js" type="text/javascript"></script>

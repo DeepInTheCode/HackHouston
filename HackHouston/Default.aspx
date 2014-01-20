@@ -78,8 +78,8 @@
             </div>
           </script>
           </div>
-          <script src="assets/js/libs/jquery/jquery.min.js" type="text/javascript"></script>
-          <script src="Scripts/jquery-2.0.3.min.js"></script>  
+          <script src="assets/js/libs/jquery/jquery.min.js" type="text/javascript"></script>          
+          <script src="Scripts/jquery-1.10.2.min.js"></script> 
           <script src="assets/js/libs/jquery/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
           <script src="Scripts/jquery-ui-1.10.3.min.js"></script>
           <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>

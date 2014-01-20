@@ -43,7 +43,6 @@ C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\HackHou
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\HackHouston.dll
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\HackHouston.pdb
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\Antlr3.Runtime.dll
-C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\EntityFramework.dll
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\Newtonsoft.Json.dll
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Net.Http.Extensions.dll
@@ -73,10 +72,8 @@ C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Web.WebPages.xml
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Web.WebPages.Deployment.xml
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Web.WebPages.Razor.xml
-C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\EntityFramework.xml
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.csproj.App.config
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.Properties.Resources.resources
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.csproj.GenerateResource.Cache
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.dll
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.pdb
-C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.csprojResolveAssemblyReference.cache
