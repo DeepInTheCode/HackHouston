@@ -38,27 +38,34 @@
               </div>
             </div>
           </script>
-          </div>          
-          <script src="Scripts/jquery-1.10.2.min.js"></script> 
-          <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>
-          <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>
-          <script src="vendors/mustache.js" type="text/javascript"></script>
-          <script type ="text/javascript">
-              var apiUrl = "<%= apiUrl %>";
-              var embedUrl = "";
-              var idArray = "<%= idArray %>";
-          </script>
-          <script src="Scripts/config.js" type="text/javascript"></script>
-          <script src="assets/js/libs/json2.js" type="text/javascript"></script>
-          <script src="assets/js/libs/jquery/jquery.jstorage.js" type="text/javascript"></script>
-          <script src="assets/js/Handler.js" type="text/javascript"></script>
-          <script src="assets/js/libs/md5.js" type="text/javascript"></script>
-          <script src="assets/js/storageIds.js" type="text/javascript"></script>
-          <script src="assets/js/filter.js" type="text/javascript"></script>
-          <script src="assets/js/embed.js" type="text/javascript"></script>
-          <script src="assets/js/stream.js" type="text/javascript"></script>
-          <script src="assets/js/infinitescroll.js" type="text/javascript"></script>
-      </form>
+        </div>                 
+    </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>          
+    <script type="text/javascript">
+        // Check if jQuery was initialized and if not (CDN was down for example), then
+        // load jQuery from a local source.
+        if (typeof jQuery === 'undefined') {
+            document.write(unescape("%3Cscript src='Scripts/jquery-1.10.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script> 
+    <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>
+    <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>
+    <script src="vendors/mustache.js" type="text/javascript"></script>
+    <script type ="text/javascript">
+        var apiUrl = "<%= apiUrl %>";
+        var embedUrl = "";
+        var idArray = "<%= idArray %>";
+    </script>
+    <script src="Scripts/config.js" type="text/javascript"></script>
+    <script src="assets/js/libs/json2.js" type="text/javascript"></script>
+    <script src="assets/js/libs/jquery/jquery.jstorage.js" type="text/javascript"></script>
+    <script src="assets/js/Handler.js" type="text/javascript"></script>
+    <script src="assets/js/libs/md5.js" type="text/javascript"></script>
+    <script src="assets/js/storageIds.js" type="text/javascript"></script>
+    <script src="assets/js/filter.js" type="text/javascript"></script>
+    <script src="assets/js/embed.js" type="text/javascript"></script>
+    <script src="assets/js/stream.js" type="text/javascript"></script>
+    <script src="assets/js/infinitescroll.js" type="text/javascript"></script>
     </body>
   </html>
 
