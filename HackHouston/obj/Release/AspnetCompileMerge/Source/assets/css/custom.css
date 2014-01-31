@@ -1,0 +1,26 @@
+.thumbnail {
+  background-color: #D3D3D3;
+  overflow: auto;
+  min-height: 0;
+}
+
+.amount {
+  margin-left: 50%;
+  color: red;
+}
+
+.embed-bar {
+  float: left;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-left: -5px;
+  background: #21B2AA;
+}
+
+#embed {
+  text-align: center;
+}
+
+#embed .des {
+  display: none;
+}

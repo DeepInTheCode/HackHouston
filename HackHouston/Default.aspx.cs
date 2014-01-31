@@ -24,10 +24,14 @@ public partial class Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
-        string authority = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority);
-        string relativeUrl = "/api";
-        apiUrl = authority + relativeUrl;
-        embedUrl = authority;
+        string baseUrl = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority) + HttpContext.Current.Request.ApplicationPath;
+        if (HttpContext.Current.Request.ApplicationPath.Length > 1)
+        {
+            baseUrl = baseUrl + "/";
+        }
+        string relativeUrl = "api";
+        apiUrl = baseUrl + relativeUrl;
+        embedUrl = baseUrl;
         string connectionString = ConfigurationManager.ConnectionStrings["DbConnectionString"].ConnectionString;
         SqlConnection conn = new SqlConnection(connectionString);
         SqlCommand command;

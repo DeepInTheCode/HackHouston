@@ -61,3 +61,4 @@ C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Web.WebPages.xml
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Web.WebPages.Deployment.xml
 C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\bin\System.Web.WebPages.Razor.xml
+C:\Users\d01you\Documents\GitHub\HackHouston\HackHouston\HackHouston\obj\Debug\HackHouston.csprojResolveAssemblyReference.cache
