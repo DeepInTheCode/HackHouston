@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Configuration;
 
 
-public partial class Default : System.Web.UI.Page
+public partial class Fees : System.Web.UI.Page
 {    
     protected string strResponsibleDepartment;
     protected string feeCount;

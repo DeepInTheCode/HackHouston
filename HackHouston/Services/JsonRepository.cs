@@ -33,8 +33,8 @@ namespace HackHouston.Services
             }
             string strApplication = strHash + strCallback + strId;
 
-            if (HttpContext.Current.Application[strApplication] == null)
-            {
+            //if (HttpContext.Current.Application[strApplication] == null)
+            //{
                 SqlDataReader rdr = null;
                 SqlConnection conn = null;
                 SqlCommand command = null;
@@ -118,9 +118,10 @@ namespace HackHouston.Services
                 {
                     conn.Close(); // close the connection         
                 }
-                HttpContext.Current.Application[strApplication] = ReturnPureJson(json);
-            }
-            return (HttpResponseMessage)HttpContext.Current.Application[strApplication];            
+                //HttpContext.Current.Application[strApplication] = ReturnPureJson(json);
+            //}
+            //return (HttpResponseMessage)HttpContext.Current.Application[strApplication];            
+                return ReturnPureJson(json);
         }
 
         public HttpResponseMessage ReturnPureJson(string json)

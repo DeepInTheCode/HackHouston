@@ -38,13 +38,16 @@
           </script>
         </div>                 
     </form>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>          
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>    
     <script type="text/javascript">
         // Check if jQuery was initialized and if not (CDN was down for example), then
         // load jQuery from a local source.
         if (typeof jQuery === 'undefined') {
-            document.write(unescape("%3Cscript src='Scripts/jquery-1.10.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='Scripts/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='Scripts/jquery-migrate-1.2.1.min.js' type='text/javascript'%3E%3C/script%3E"));            
         }
+        jQuery.ajaxSetup({ cache: true });
     </script> 
     <script src="assets/js/libs/jquery/jquery.typewatch.js" type="text/javascript"></script>
     <script src="assets/js/libs/jquery/waypoints.min.js" type="text/javascript"></script>

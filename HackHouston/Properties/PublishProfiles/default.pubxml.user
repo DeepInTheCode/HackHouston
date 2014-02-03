@@ -121,10 +121,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/04/2013 16:37:06</publishTime>
     </File>
     <File Include="assets/js/storage.js">
-      <publishTime>09/16/2013 17:46:54</publishTime>
+      <publishTime>02/03/2014 15:06:44</publishTime>
     </File>
     <File Include="assets/js/storageIds.js">
-      <publishTime>09/16/2013 17:46:54</publishTime>
+      <publishTime>02/03/2014 15:06:44</publishTime>
     </File>
     <File Include="assets/js/stream.js">
       <publishTime>01/06/2014 16:36:43</publishTime>
@@ -133,10 +133,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/05/2013 17:32:00</publishTime>
     </File>
     <File Include="bin/App_global.asax.compiled">
-      <publishTime>01/31/2014 12:27:19</publishTime>
+      <publishTime>02/03/2014 16:29:25</publishTime>
     </File>
     <File Include="bin/App_global.asax.dll">
-      <publishTime>01/31/2014 12:27:19</publishTime>
+      <publishTime>02/03/2014 16:29:24</publishTime>
     </File>
     <File Include="bin/App_Web_05jmfms3.dll">
       <publishTime>01/30/2014 16:34:20</publishTime>
@@ -162,8 +162,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/App_Web_3co0unwo.dll">
       <publishTime>01/30/2014 16:50:10</publishTime>
     </File>
+    <File Include="bin/App_Web_3nqtzbny.dll">
+      <publishTime>02/03/2014 16:29:28</publishTime>
+    </File>
+    <File Include="bin/App_Web_3y2jyyd3.dll">
+      <publishTime>02/03/2014 15:32:05</publishTime>
+    </File>
+    <File Include="bin/App_Web_3zhxmllz.dll">
+      <publishTime>02/03/2014 14:08:19</publishTime>
+    </File>
+    <File Include="bin/App_Web_4b2kxhsw.dll">
+      <publishTime>02/03/2014 15:46:32</publishTime>
+    </File>
     <File Include="bin/App_Web_4cdrayjz.dll">
       <publishTime>01/31/2014 11:31:07</publishTime>
+    </File>
+    <File Include="bin/App_Web_55fvqwqa.dll">
+      <publishTime>02/03/2014 16:10:49</publishTime>
+    </File>
+    <File Include="bin/App_Web_5wvtcmi2.dll">
+      <publishTime>02/03/2014 12:53:17</publishTime>
+    </File>
+    <File Include="bin/App_Web_anhsriy0.dll">
+      <publishTime>02/03/2014 16:29:26</publishTime>
     </File>
     <File Include="bin/App_Web_bctdtfx3.dll">
       <publishTime>01/31/2014 12:27:22</publishTime>
@@ -171,8 +192,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/App_Web_bebprd3q.dll">
       <publishTime>01/30/2014 16:54:33</publishTime>
     </File>
+    <File Include="bin/App_Web_bjfrgbep.dll">
+      <publishTime>02/03/2014 16:29:29</publishTime>
+    </File>
+    <File Include="bin/App_Web_bli5gv1x.dll">
+      <publishTime>02/03/2014 15:46:31</publishTime>
+    </File>
+    <File Include="bin/App_Web_bop3bxke.dll">
+      <publishTime>02/03/2014 15:46:34</publishTime>
+    </File>
     <File Include="bin/App_Web_c3a1kehv.dll">
       <publishTime>01/31/2014 12:27:24</publishTime>
+    </File>
+    <File Include="bin/App_Web_cdz1ksww.dll">
+      <publishTime>02/03/2014 12:53:17</publishTime>
     </File>
     <File Include="bin/App_Web_ckz1c2h2.dll">
       <publishTime>01/30/2014 16:03:43</publishTime>
@@ -180,20 +213,47 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/App_Web_cn5hbpfv.dll">
       <publishTime>01/30/2014 16:03:45</publishTime>
     </File>
+    <File Include="bin/App_Web_dzgdkpok.dll">
+      <publishTime>02/03/2014 15:32:08</publishTime>
+    </File>
     <File Include="bin/App_Web_e05wwmft.dll">
       <publishTime>01/31/2014 12:13:29</publishTime>
+    </File>
+    <File Include="bin/App_Web_eaawc50t.dll">
+      <publishTime>02/03/2014 15:46:32</publishTime>
     </File>
     <File Include="bin/App_Web_eqnq2ywp.dll">
       <publishTime>01/31/2014 12:27:22</publishTime>
     </File>
+    <File Include="bin/App_Web_fthbv5lk.dll">
+      <publishTime>02/03/2014 12:53:18</publishTime>
+    </File>
+    <File Include="bin/App_Web_fyi53kee.dll">
+      <publishTime>02/03/2014 14:24:10</publishTime>
+    </File>
+    <File Include="bin/App_Web_g1f1slyd.dll">
+      <publishTime>02/03/2014 15:32:06</publishTime>
+    </File>
+    <File Include="bin/App_Web_hnagupof.dll">
+      <publishTime>02/03/2014 14:08:17</publishTime>
+    </File>
+    <File Include="bin/App_Web_hy25aj5a.dll">
+      <publishTime>02/03/2014 12:53:16</publishTime>
+    </File>
     <File Include="bin/App_Web_hy3levl4.dll">
       <publishTime>01/31/2014 12:13:31</publishTime>
+    </File>
+    <File Include="bin/App_Web_jmeqdlix.dll">
+      <publishTime>02/03/2014 14:08:16</publishTime>
     </File>
     <File Include="bin/App_Web_k4v42t3x.dll">
       <publishTime>01/30/2014 16:34:21</publishTime>
     </File>
     <File Include="bin/App_Web_l5tuvcu1.dll">
       <publishTime>01/31/2014 11:31:04</publishTime>
+    </File>
+    <File Include="bin/App_Web_lobmxxb2.dll">
+      <publishTime>02/03/2014 14:24:08</publishTime>
     </File>
     <File Include="bin/App_Web_mm1jbqgf.dll">
       <publishTime>01/31/2014 11:53:08</publishTime>
@@ -207,6 +267,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/App_Web_pywhvvns.dll">
       <publishTime>01/31/2014 12:13:32</publishTime>
     </File>
+    <File Include="bin/App_Web_qajeyrwe.dll">
+      <publishTime>02/03/2014 14:24:11</publishTime>
+    </File>
     <File Include="bin/App_Web_rxbox0aa.dll">
       <publishTime>01/31/2014 11:31:04</publishTime>
     </File>
@@ -215,6 +278,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="bin/App_Web_t134zgl4.dll">
       <publishTime>01/30/2014 16:34:23</publishTime>
+    </File>
+    <File Include="bin/App_Web_tu231dqi.dll">
+      <publishTime>02/03/2014 16:10:51</publishTime>
+    </File>
+    <File Include="bin/App_Web_ty2imhgd.dll">
+      <publishTime>02/03/2014 15:32:07</publishTime>
     </File>
     <File Include="bin/App_Web_uacbvh3j.dll">
       <publishTime>01/31/2014 11:53:09</publishTime>
@@ -231,8 +300,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="bin/App_Web_w2iu1hjn.dll">
       <publishTime>01/30/2014 16:54:32</publishTime>
     </File>
+    <File Include="bin/App_Web_wcj3b5vf.dll">
+      <publishTime>02/03/2014 16:10:48</publishTime>
+    </File>
+    <File Include="bin/App_Web_wx3kecvv.dll">
+      <publishTime>02/03/2014 14:08:17</publishTime>
+    </File>
+    <File Include="bin/App_Web_x4rcm5ch.dll">
+      <publishTime>02/03/2014 16:10:50</publishTime>
+    </File>
+    <File Include="bin/App_Web_xk5a3um1.dll">
+      <publishTime>02/03/2014 14:24:09</publishTime>
+    </File>
     <File Include="bin/App_Web_yzbxneit.dll">
       <publishTime>01/30/2014 16:50:12</publishTime>
+    </File>
+    <File Include="bin/App_Web_zqapfqbj.dll">
+      <publishTime>02/03/2014 16:29:27</publishTime>
     </File>
     <File Include="bin/default.aspx.cdcab7d2.compiled">
       <publishTime>01/31/2014 12:27:24</publishTime>
@@ -244,16 +328,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2014 14:35:15</publishTime>
     </File>
     <File Include="bin/error.cshtml.639c3968.compiled">
-      <publishTime>01/31/2014 12:27:22</publishTime>
+      <publishTime>02/03/2014 16:29:27</publishTime>
+    </File>
+    <File Include="bin/fees.aspx.cdcab7d2.compiled">
+      <publishTime>02/03/2014 16:29:29</publishTime>
     </File>
     <File Include="bin/feesbyid.aspx.cdcab7d2.compiled">
-      <publishTime>01/31/2014 12:27:24</publishTime>
+      <publishTime>02/03/2014 16:29:29</publishTime>
     </File>
     <File Include="bin/HackHouston.dll">
-      <publishTime>01/31/2014 12:27:12</publishTime>
+      <publishTime>02/03/2014 16:29:14</publishTime>
     </File>
     <File Include="bin/index.cshtml.a8d08dba.compiled">
-      <publishTime>01/31/2014 12:27:21</publishTime>
+      <publishTime>02/03/2014 16:29:26</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>07/09/2012 00:40:08</publishTime>
@@ -361,10 +448,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/05/2013 17:32:02</publishTime>
     </File>
     <File Include="bin/_layout.cshtml.639c3968.compiled">
-      <publishTime>01/31/2014 12:27:22</publishTime>
+      <publishTime>02/03/2014 16:29:27</publishTime>
     </File>
     <File Include="bin/_viewstart.cshtml.65a2d1ee.compiled">
-      <publishTime>01/31/2014 12:27:22</publishTime>
+      <publishTime>02/03/2014 16:29:28</publishTime>
     </File>
     <File Include="Content/Site.css">
       <publishTime>09/04/2013 15:58:24</publishTime>
@@ -561,8 +648,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="favicon.ico">
       <publishTime>09/04/2013 15:58:22</publishTime>
     </File>
+    <File Include="Fees.aspx">
+      <publishTime>02/03/2014 16:29:37</publishTime>
+    </File>
     <File Include="FeesById.aspx">
-      <publishTime>01/31/2014 12:27:30</publishTime>
+      <publishTime>02/03/2014 16:29:37</publishTime>
     </File>
     <File Include="Images/accent.png">
       <publishTime>09/04/2013 15:58:40</publishTime>
@@ -607,7 +697,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2014 14:35:22</publishTime>
     </File>
     <File Include="PrecompiledApp.config">
-      <publishTime>01/31/2014 12:27:15</publishTime>
+      <publishTime>02/03/2014 16:29:16</publishTime>
     </File>
     <File Include="Scripts/config.js">
       <publishTime>09/16/2013 18:22:26</publishTime>
@@ -615,11 +705,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/jquery-1.10.2.min.js">
       <publishTime>01/20/2014 13:53:03</publishTime>
     </File>
+    <File Include="Scripts/jquery-1.11.0.min.js">
+      <publishTime>02/03/2014 12:33:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-migrate-1.2.1.js">
+      <publishTime>02/03/2014 10:44:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-migrate-1.2.1.min.js">
+      <publishTime>02/03/2014 10:44:12</publishTime>
+    </File>
     <File Include="Scripts/jquery-ui-1.10.3.js">
       <publishTime>09/05/2013 17:34:02</publishTime>
     </File>
     <File Include="Scripts/jquery-ui-1.10.3.min.js">
       <publishTime>09/05/2013 17:34:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.4.min.js">
+      <publishTime>02/03/2014 12:33:53</publishTime>
     </File>
     <File Include="Scripts/jquery.unobtrusive-ajax.js">
       <publishTime>09/05/2013 17:32:24</publishTime>
@@ -664,22 +766,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/04/2013 16:37:06</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>01/31/2014 12:27:30</publishTime>
+      <publishTime>02/03/2014 16:29:38</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>01/31/2014 12:27:30</publishTime>
+      <publishTime>02/03/2014 16:29:38</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>01/31/2014 12:27:30</publishTime>
+      <publishTime>02/03/2014 16:29:38</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>09/04/2013 15:58:52</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>01/31/2014 12:27:30</publishTime>
+      <publishTime>02/03/2014 16:29:38</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/30/2014 16:03:35</publishTime>
+      <publishTime>02/03/2014 14:07:20</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -22,7 +22,7 @@ namespace HackHouston.Controllers
         public HttpResponseMessage all(string hash, string callback, string id)
         {
             return jsonRepository.GetJsons(hash, callback, id);
-        }
+        } 
 
         [HttpGet]
         public HttpResponseMessage all()
@@ -34,6 +34,12 @@ namespace HackHouston.Controllers
         public HttpResponseMessage all(string callback)
         {
             return jsonRepository.GetJsons(null, callback, null);
-        }    
+        }
+
+        [HttpGet]
+        public HttpResponseMessage all(string hash, string callback)
+        {
+            return jsonRepository.GetJsons(hash, callback, null);
+        } 
     }
 }
