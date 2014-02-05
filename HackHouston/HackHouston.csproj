@@ -244,7 +244,9 @@
     <Content Include="assets\css\stream.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\glyphiconshalflings-regular.svg" />
-    <Content Include="assets\js\storageIds.js" />
+    <Content Include="assets\js\filterIds.js" />
+    <Content Include="assets\js\getAll.js" />
+    <Content Include="assets\js\getIds.js" />
     <Content Include="assets\js\storage.js" />
     <Content Include="assets\js\embed.js" />
     <Content Include="assets\js\filter.js" />

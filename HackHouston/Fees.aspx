@@ -100,6 +100,7 @@
         <script src="assets/js/Handler.js" type="text/javascript"></script>
         <script src="assets/js/libs/md5.js" type="text/javascript"></script>
         <script src="assets/js/storage.js" type="text/javascript"></script>
+        <script src="assets/js/getAll.js" type="text/javascript"></script>
         <script src="assets/js/filter.js" type="text/javascript"></script>
         <script src="assets/js/embed.js" type="text/javascript"></script>
         <script type="text/javascript">

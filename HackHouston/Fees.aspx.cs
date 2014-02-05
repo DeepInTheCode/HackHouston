@@ -40,10 +40,9 @@ public partial class Fees : System.Web.UI.Page
 
         try
         {
+            deptColumn = getAppSettingsValue("deptColumn");
             if (Application["ResponsibleDepartment"] == null)
-            {                
-                //string searchColumn = getAppSettingsValue("searchColumn");
-                deptColumn = getAppSettingsValue("deptColumn");
+            {                                            
                 List<string> ResponsibleDepartment = new List<string>();
 
                 command = new SqlCommand("SELECT DISTINCT [" + deptColumn + "] FROM [" + tableName + "] ORDER BY [" + deptColumn + "]", conn);
@@ -60,10 +59,6 @@ public partial class Fees : System.Web.UI.Page
                     if (pos == -1)
                     {
                         string strRespDept = rdr[deptColumn].ToString();
-                        //if (strRespDept.Contains(@"'"))
-                        //{
-                        //    strRespDept.Replace(@"'", @"''");
-                        //}                        
                         ResponsibleDepartment.Add(strRespDept);
                     }
                 }
@@ -88,8 +83,7 @@ public partial class Fees : System.Web.UI.Page
             
             amountColumn = getAppSettingsValue("amountColumn");
             nameColumn = getAppSettingsValue("nameColumn");
-            descriptionColumn = getAppSettingsValue("descriptionColumn");
-            //deptColumn = getAppSettingsValue("deptColumn");
+            descriptionColumn = getAppSettingsValue("descriptionColumn");            
             statAuthColumn = getAppSettingsValue("statAuthColumn");
             tagColumn = getAppSettingsValue("tagColumn");
             idColumn = getAppSettingsValue("idColumn");

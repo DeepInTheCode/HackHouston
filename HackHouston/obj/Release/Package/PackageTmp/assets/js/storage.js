@@ -1,11 +1,3 @@
-$.getScript(window.city_config['api url'] + '/get/all?hash=' + hashData() + '&callback=jsonpCallback', function(){
-  $('#fees').html(''); // clear old data
-  _Handler.removeAll(); // clear old handlers
-  handler.initAll();
-  window.fee_filter = create_filter(master_fees);
-  $.waypoints('refresh');  
-});
-
 function jsonpCallback(object) {
   if (!object) {
     master_fees = getFees();
@@ -22,7 +14,7 @@ function hashData() {
     return null;
   }
 
-  return md5(JSON.stringify(data));
+  return setTimeout(function () { md5(JSON.stringify(data)); },100000);
 }
 
 function storeFees(fees) {

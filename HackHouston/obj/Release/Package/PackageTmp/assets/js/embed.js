@@ -2,7 +2,7 @@
   
   var ids = [];
 
-  showEmbed();
+  setTimeout(function () { showEmbed(); }, 100000);
   handler.addHandler(showEmbed);
   
   window.embedBoxClick = checkboxClick;
