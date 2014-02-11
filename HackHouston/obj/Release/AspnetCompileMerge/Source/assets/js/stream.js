@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
   function handle() {
     $('#all_departments').on('click', function(e) {
       $('#department_criteria :checkbox:gt(0)').prop('checked', $(this).is(':checked'));
-      fee_filter.filter();
+      setTimeout(function () { fee_filter.filter(); }, 100);
     });
   }
   

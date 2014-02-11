@@ -1,0 +1,1 @@
+﻿jQuery.ajaxSetup({ cache: true });

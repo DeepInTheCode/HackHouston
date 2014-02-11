@@ -23,7 +23,7 @@
         $('#fees').removeClass('show-embed');
       } else {
         var html = $('<div>' + $.trim($("#template").html()) + '</div>');
-        var embed = '<span class="label label-success embed-bar"><span>Embed</span> <input type="checkbox"></span>';
+        var embed = '<span class="label label-success embed-bar"><span>Embed</span> <input type="checkbox" /></span>';
         
         $('.rating', html).after(embed);
         window.fee_template = $.trim(html.html());
