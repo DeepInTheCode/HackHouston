@@ -261,6 +261,7 @@
     <Content Include="assets\js\libs\md5.js" />
     <Content Include="assets\js\libs\respond.js" />
     <Content Include="assets\js\stream.js" />
+    <Content Include="css\main311.css" />
     <Content Include="FeesById.aspx" />
     <Content Include="Scripts\config.js" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
