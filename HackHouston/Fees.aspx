@@ -42,7 +42,6 @@
     <body runat="server" onkeypress="var e = (event ? event : window.event); return (e.keyCode ? e.keyCode : e.charCode ? e.charCode : e.which) != 13;">
         <form id="form1" runat="server">
             <div class="container">
-                <h1 class="title">City of Houston Fee Schedule</h1>
                 <div class="sidebar col-span-3">
                     <div class="row">
                         <h4 class="col-span-6"> Fees (<span id="total_fees"><%= feeCount %></span>)</h4>

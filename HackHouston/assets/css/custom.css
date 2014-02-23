@@ -1,6 +1,7 @@
 .thumbnail {
-  background-color: #D3D3D3;
-  overflow: auto;
+  background-color: #91C3DC;
+  overflow-x: hidden;
+  overflow-y: hidden;
   min-height: 0;
 }
 

@@ -1,5 +1,5 @@
 body{
-  background-color: #f5f5f5;
+  background-color: #EEF5F6;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -8,7 +8,7 @@ h4, dd, .checkbox label{
 }
 
 dt{
-  font-weight: 400;
+  font-weight: bold;
 }
 
 select, textarea, input{
@@ -25,6 +25,7 @@ select:focus, textarea:focus, input:focus{
 
 .container{
   margin:0 auto;
+  max-width: 100%;
 }
 
 .sidebar{
@@ -39,7 +40,7 @@ select:focus, textarea:focus, input:focus{
 */
 }
 
-.sidebar .row h4{
+.sidebar .row f{
   color: #808080;
   padding-left: 0px;
 /* border-bottom: 2px solid #e5e5e5;
@@ -68,7 +69,7 @@ select:focus, textarea:focus, input:focus{
 }
 
 .criteria{
-  background-color: #D3D3D3;
+  background-color: #91C3DC;
   min-height: 110px;
   margin: 20px 0px;
   padding-bottom: 5px;
@@ -135,7 +136,7 @@ select:focus, textarea:focus, input:focus{
   font-size: 14px;
   margin-top: -5px;
   margin-right: -5px;
-  background-color: #F08080;
+  background-color: #5CB85C;
 }
 
 .rating .glyphicon{
@@ -183,7 +184,7 @@ select:focus, textarea:focus, input:focus{
   padding-top: 10px;
   padding-bottom: 5px;
   margin: 10px;
-  color: #808080;
+  color: #555555;
 }
 
 .ui-widget-header{
