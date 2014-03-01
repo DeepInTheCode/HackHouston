@@ -1,3 +1,8 @@
+.sidebar {
+    overflow:hidden;  
+    position:absolute; 
+}
+
 .thumbnail {
   background-color: #91C3DC;
   overflow-x: hidden;
