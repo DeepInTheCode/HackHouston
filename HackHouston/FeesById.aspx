@@ -7,7 +7,6 @@
         <link href="assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="assets/css/stream.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="assets/css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="http://www.houstontx.gov/css/homeContent.css" rel="stylesheet" type="text/css" />   
         <script type ="text/javascript">
             var apiUrl = "<%= apiUrl %>";
             var embedUrl = "";
